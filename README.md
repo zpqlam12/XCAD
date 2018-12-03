@@ -21,7 +21,7 @@ In this page, a multitask computer aided diagnosis (CADx) framework is devised t
 
 
 ## Pretrained Models
-Thanks to Davi Frossard you can download a pretrained weight (from caffe, not from pytorch) here https://www.cs.toronto.edu/~frossard/vgg16/vgg16_weights.npz.
+Thanks to Davi Frossard you can download a pretrained weight here https://www.cs.toronto.edu/~frossard/vgg16/vgg16_weights.npz.
 
 
 ## How to use
