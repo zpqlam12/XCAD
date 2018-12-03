@@ -20,18 +20,25 @@ In this page, a multitask computer aided diagnosis (CADx) framework is devised t
 * opencv2
 
 
+## Pretrained Models
+Thanks to Davi Frossard you can download a pretrained weight (from caffe, not from pytorch) here https://www.cs.toronto.edu/~frossard/vgg16/vgg16_weights.npz.
+
+
 ## How to use
 First, go into the 'data' directory and download "DDSM dataset"
 
 For data consistency, mammograms scanned by Howtek 960 were selected from the DDSM dataset.
 By using LJPEG2PNG tool "DDSMUtility", load breast image.
 Preprocess the DDSM dataset to create a h5 file. It resizes images to 64*64.
-   
 
+After that preprecess the pretrained model vgg16_weights.npz
+
+    cd preprocess
+    python prepare.py
 
 Finally, go into the 'code' directory and run 'main_ICADx.py'.
     
-    cd ../code
+    cd ..
     python main_ICADx.py
     
 
